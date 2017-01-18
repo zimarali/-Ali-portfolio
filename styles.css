@@ -1,0 +1,75 @@
+body {
+    background-color: dimgray
+}
+
+h1 {
+	font: 70px cavestory;
+	text-align: center;
+    background-color: #2962de;
+    color: #070606;
+	text-decoration: underline;
+	-moz-box-shadow: 3px 0 10px #0b0b0b;
+	box-shadow: 3px 0 10px #0b0b0b;
+	border-style: solid;
+	border-color: #050505;
+	margin: auto;
+	position: static;
+}
+h2 {
+	background-color: #1c1717;
+	color: #f9f8f8;
+	text-align: center;
+	font: 50px cavestory;
+	margin: auto;
+}
+div.img {
+	border: 5px solid #1840df;
+	float: left;
+    width: 180px;
+	opacity: 1;
+	-moz-box-shadow: 0 0 10px #180e0e;
+	box-shadow: 0 0 10px #180e0e;
+	margin: 14px;
+}
+
+div.img:hover {
+	border: 5px solid #1c1515;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+	font: 35px "cavestory";
+	padding: 15px;
+    text-align: center;
+	color: #170909;
+	text-shadow: 0 0 1px #211b63;
+}
+div.about {
+	color: #240c0c;
+	font: 35px cavestory;
+}
+@font-face {
+    font-family: 'cavestory';
+    src: url(fonts/Cave-Story.ttf);
+}
+label {
+    display: block;
+	letter-spacing:2px;
+	background-color: #4e6ae7;
+	-moz-box-shadow: 0 0 5px #060606;
+	box-shadow: 0 0 5px #060606;
+	color: #080808;
+	font: 25px cavestory;
+	text-align: left;
+	text-indent: 5px;
+	width: 100px;
+	height: 18px;
+}
+textarea {
+	display: block;
+	float: none;
+}
