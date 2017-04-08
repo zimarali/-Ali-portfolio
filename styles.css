@@ -6,15 +6,18 @@ body, html {
   margin-bottom: 0;
 }
 #main {
-
+  background-color: #474e5d;
+  height: 100%
 }
 #projects {
-  background-color: #a0e0fd;
+  background-color: #474e5d;
   height: 100%
 }
 #about {
-
+  background-color: #474e5d;
+  height: 100%
 }
 #contact {
-
+  background-color: #474e5d;
+  height: 100%
 }
