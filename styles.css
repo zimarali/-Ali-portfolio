@@ -27,3 +27,17 @@ body {
 #haha {
   font-size: 7px;
 }
+#logo {
+  height: 100px;
+  width: 150px;
+  margin: 0 auto;
+}
+#logo2 {
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.formtext {
+  color: #9d9d9d;
+}
