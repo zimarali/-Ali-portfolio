@@ -41,3 +41,9 @@ body {
 .formtext {
   color: #9d9d9d;
 }
+.overv {
+  margin-left: 30px;
+}
+.col-center{
+  margin:0 auto;
+}
