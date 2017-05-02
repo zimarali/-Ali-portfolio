@@ -4,32 +4,60 @@
 <head>
     <title>Ramiz Ali</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/33930d8d2f.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="styles.css" type="text/css" rel="stylesheet" />
 </head>
     <body ng-app="myPort">
-      <div class="row">
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="theNav">
-              <ul class="nav navbar-nav">
-                <li><a href="#/"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="#/projects"><span class="glyphicon glyphicon-file"></span>{Portfolio}</a></li>
-                <li><a href="#/about"><span class="glyphicon glyphicon-user"></span>{About Me}</a></li>
-                <li><a href="#/contact"><span class="glyphicon glyphicon-envelope"></span>{Contact Me}</a></li>
-              </ul>
-            </div>
+      <div class="container-fluid bg1">
+        <div class="mainText">
+        <div class="row text-center">
+          <div id="name">
+            Ramiz Ali
           </div>
-        </nav>
+          <div id="userIcon">
+            <br>
+            <a href="#/contact"><i anchor-smooth-scroll="proj" class="fa fa-user-circle icons"></i></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div id="fewd">
+            Front-End Web Developer
+          </div>
+          <div id="gitIcon">
+            <br>
+            <a href="https://github.com/zimarali" target="_blank"><i class="fa fa-github icons"></i></a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div id="downArrow">
+            <i anchor-smooth-scroll="proj" class="fa fa-chevron-down icons"></i>
+          </div>
+        </div>
+        </div>
       </div>
-      <ng-view></ng-view>
+
+      <div class="container-fluid bg2">
+
+        <div class="row">
+          <div class="btn-group navStuff" style="width:100%">
+            <a href="#/"><button id="proj" style="width:50%">Projects</button></a>
+            <a href="#/contact"><button style="width:50%">Contact</button></a>
+          </div>
+        <ng-view></ng-view>
+
+      </div>
+
+      <div class="container bg3">
+        <div class="row text-center i2">
+        <a href="#/contact"><i anchor-smooth-scroll="proj" class="fa fa-user-circle icons"></i></a>
+        <i id="upI" anchor-smooth-scroll="proj" class="fa fa-chevron-up icons"></i>
+        <a href="https://github.com/zimarali" target="_blank"><i class="fa fa-github icons"></i></a>
+        </div>
+      </div>
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
