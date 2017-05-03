@@ -43,9 +43,8 @@
 }
 
 .pImg {
-  max-width: 250px;
+  max-width: 300px;
 }
-
 .left {
   float: left;
 }
@@ -117,4 +116,19 @@
 }
 a .fa{
   color: gray;
+}
+
+@media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
+  .pImg {
+    max-width: 260px;
+  }
+  .button {
+    padding: 11px 13px;
+  }
+}
+
+@media only screen and (max-height: 700px), only screen and (max-device-height: 700px) {
+  .desc2 {
+    font-size: 15px;
+  }
 }
