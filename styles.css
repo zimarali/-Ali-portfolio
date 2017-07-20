@@ -1,3 +1,9 @@
+body {
+  background-color: black;
+}
+.navStuff {
+  margin-bottom: 30px;
+}
 .bg1 {
   background-color: #37648b;
   width: 100%;
@@ -8,15 +14,65 @@
   margin: auto;
   max-width: 300px
 }
+.pbg1, .pbg2, .pbg3, .pbg4 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.pbg1 {
+  background-image: url(./images/bg2.png);
+  min-height: 350px;
+}
+.pbg2 {
+  background-image: url(./images/bg2.png);
+  background-color: blue;
+  background-blend-mode: difference;
+  min-height: 350px;
+}
+.pbg3 {
+  background-image: url(./images/bg2.png);
+  background-color: green;
+  background-blend-mode: difference;
+  min-height: 350px;
+}
+.pbg4 {
+  background-image: url(./images/bg2.png);
+  min-height: 350px;
+}
+.boxstuff {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.0);
+}
+.boxstuffbox {
+  border-radius: 25px;
+  margin: 0 auto;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 55%;
+}
+.bardude {
+  background-color: black;
+  position: relative;
+  width: 70%;
+  height: 75px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
 .mainText {
   max-width: 500px;
   margin: auto;
   position: relative;
   z-index: 1;
   top: -90%;
-}
-.navStuff {
-  padding-bottom: 20px;
 }
 #name {
   font-size: 50px;
@@ -61,11 +117,13 @@
   margin-top: 20px;
   max-width: 300px;
   bottom: 0;
+  color: white;
 }
 
 .desc2 {
   font-size: 15px;
   border-bottom: 1px dotted black;
+  color: white;
 }
 .button {
   background-color: white;
