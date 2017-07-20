@@ -3,8 +3,9 @@
 }*/
 #wrapper{
   position:relative;
-  width:500px;
-  height:600px;
+  left: 10%;
+  width: 100%;
+  height: 600px;
 }
 .wavebarFX {
 	position:absolute;

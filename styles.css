@@ -1,18 +1,39 @@
 body {
   background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .navStuff {
   margin-bottom: 30px;
 }
 .bg1 {
-  background-color: #37648b;
-  width: 100%;
-  height: 600px;
+  background-image: url(./images/bg2.png);
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-top: 25px;
+  min-height: 500px;
 }
 .bg3 {
-  background-color: #37648b;
-  margin: auto;
-  max-width: 300px
+  background-image: url(./images/bg2.png);
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding-top: 25px;
+  min-height: 300px;
 }
 .pbg1, .pbg2, .pbg3, .pbg4 {
   position: relative;
@@ -24,9 +45,12 @@ body {
   max-width: 75%;
   margin: 0 auto;
   padding-top: 25px;
+  padding-bottom: 20px;
 }
 .pbg1 {
   background-image: url(./images/bg2.png);
+  background-color: gray;
+  background-blend-mode: difference;
   min-height: 350px;
 }
 .pbg2 {
@@ -45,19 +69,17 @@ body {
   background-image: url(./images/bg2.png);
   min-height: 350px;
 }
-.boxstuff {
-  margin: 0 auto;
-  max-width: 90%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: rgba(0, 0, 0, 0.0);
-}
+
 .boxstuffbox {
   border-radius: 25px;
+  position: relative;
   margin: 0 auto;
   background-color: black;
   background: rgba(0, 0, 0, 0.6);
-  max-width: 55%;
+  max-width: 65%;
+  padding: 10px;
+  overflow: auto;
+  z-index: 1;
 }
 .bardude {
   background-color: black;
@@ -69,8 +91,7 @@ body {
 }
 .mainText {
   max-width: 500px;
-  margin: auto;
-  position: relative;
+  margin: 0 auto;
   z-index: 1;
   top: -90%;
 }
@@ -100,21 +121,13 @@ body {
   color: white;
 }
 
-.pImg {
-  max-width: 300px;
-}
-.left {
-  float: left;
-}
 
-.right {
+.links{
   float: right;
 }
-
 .desc {
   position: relative;
   font-size: 20px;
-  margin-top: 20px;
   max-width: 300px;
   bottom: 0;
   color: white;
@@ -122,7 +135,7 @@ body {
 
 .desc2 {
   font-size: 15px;
-  border-bottom: 1px dotted black;
+  float: left;
   color: white;
 }
 .button {
@@ -180,7 +193,7 @@ a .fa{
   color: gray;
 }
 
-@media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
+/*@media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
   .pImg {
     max-width: 100%;
   }
@@ -196,4 +209,4 @@ a .fa{
   .desc2 {
     font-size: 15px;
   }
-}
+}*/
