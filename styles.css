@@ -7,6 +7,9 @@ body {
 .navStuff {
   margin-bottom: 30px;
 }
+.tags {
+  display: none;
+}
 .bg1 {
   background-image: url(./images/bg2.png);
   position: relative;
@@ -46,6 +49,7 @@ body {
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 20px;
+  margin-bottom: 75px;
 }
 .pbg1 {
   background-image: url(./images/bg2.png);
@@ -102,10 +106,15 @@ body {
   top: -90%;
 }
 .searchI {
-  float: right;
-  position: relative;
+  float:right;
   margin-top: -65px;
   font-size: 25px;
+}
+.pSearchForm {
+  float: right;
+  right: 32px;
+  margin-top: -67px;
+  position: relative;
 }
 #name {
   font-size: 50px;

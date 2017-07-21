@@ -1,93 +1,122 @@
-<!-- <div>
 <i class="searchI glyphicon glyphicon-search"></i>
-<input type="text" id="p-search" onkeyup="pSearch()" placeholder="Search Projects..">
-</div> -->
 
-<div id="p-stuff">
-<div class="pbg1">
-  <div class="boxstuffbox">
+<div class="pSearchForm">
+  <form class="p-search">
+    <input type="text" class="search-query" placeholder="Search Projects..">
+    <button type="submit" class="btn">Search</button>
+  </form>
+</div>
+
+<div class="pTags"><p class="tags">HTML5 CSS JavaScript AngularJS Bootstrap Last FM API discgo</p>
+  <div class="pbg1">
+    <div class="boxstuffbox">
       <img align="left" class="pImg img-responsive" src="images/discGo.png">
-        <div class="desc2">
-          using:
-          <br>
-          HTML5/CSS
-          <br>
-          JavaScript
-          <br>
-          AngularJS
-          <br>
-          Bootstrap
-          <br>
-          Last.FM API
-        </div>
+      <div class="desc2">
+        using:
+        <br>
+        HTML5/CSS
+        <br>
+        JavaScript
+        <br>
+        AngularJS
+        <br>
+        Bootstrap
+        <br>
+        Last.FM API
+      </div>
       <div class="links">
         <a href="https://github.com/zimarali/discGo" target="_blank" class="button">Github</a>
         <a href="https://zimarali.github.io/discgoPages" target="_blank" class="button">Demo</a>
       </div>
+    </div>
   </div>
 </div>
 
-<div class="bardude">
-</div>
 
-<div class="pbg2">
-  <div class="boxstuffbox">
+<div class="pTags"><p class="tags">HTML5 CSS JavaScript Bootstrap seatres theater arck</p>
+  <div class="pbg2">
+    <div class="boxstuffbox">
       <img align="left" class="pImg img-responsive" src="images/SeatRes.png">
-        <div class="desc2">
-          using:
-          <br>
-          HTML5/CSS
-          <br>
-          JavaScript
-          <br>
-          Bootstrap
-        </div>
+      <div class="desc2">
+        using:
+        <br>
+        HTML5/CSS
+        <br>
+        JavaScript
+        <br>
+        Bootstrap
+      </div>
       <div class="links">
         <a href="https://github.com/zimarali/SeatRes" target="_blank" class="button">Github</a>
         <a href="https://zimarali.github.io/SeatRes/" target="_blank" class="button">Demo</a>
       </div>
+    </div>
   </div>
 </div>
 
-<div class="bardude">
-</div>
 
-<div class="pbg3">
-  <div class="boxstuffbox">
+<div class="pTags"><p class="tags">HTML5 CSS JavaScript JQuery Bootstrap art gallery</p>
+  <div class="pbg3">
+    <div class="boxstuffbox">
       <img align="left" class="pImg img-responsive" src="images/TMSchantz.png">
-        <div class="desc2">
-          using:
-          <br>
-          HTML5/CSS
-          <br>
-          JavaScript
-          <br>
-          JQuery
-          <br>
-          Bootstrap
-        </div>
+      <div class="desc2">
+        using:
+        <br>
+        HTML5/CSS
+        <br>
+        JavaScript
+        <br>
+        JQuery
+        <br>
+        Bootstrap
+      </div>
       <div class="links">
         <a href="https://github.com/zimarali/TMSchantz" target="_blank" class="button">Github</a>
         <a href="https://zimarali.github.io/TMSchantz/" target="_blank" class="button">Demo</a>
       </div>
+    </div>
   </div>
 </div>
 
-<div class="bardude">
-</div>
 
-<div class="pbg4">
-  <div class="boxstuffbox">
+<div class="pTags"><p class="tags">HTML5 CSS Parallax</p>
+  <div class="pbg4">
+    <div class="boxstuffbox">
       <img align="left" class="pImg img-responsive" src="images/parallax.png">
-        <div class="desc2">
-          using:
-          <br>
-          HTML5/CSS
-        </div>
+      <div class="desc2">
+        using:
+        <br>
+        HTML5/CSS
+      </div>
       <div class="links">
         <a href="https://github.com/zimarali/parallax-demo" target="_blank" class="button">Github</a>
         <a href="https://zimarali.github.io/parallax-demo/" target="_blank" class="button">Demo</a>
       </div>
+    </div>
   </div>
 </div>
-</div>
+
+<script>
+
+$(document).ready(function(){
+
+  $('.p-search').on('submit',function(){return false;});
+  $('.p-search .btn').on('click', function(e){
+    console.log('test');
+    var query = $.trim($(this).prevAll('.search-query').val()).toLowerCase();
+    $('div.pTags .tags').each(function(){
+      var $this = $(this);
+      if($this.text().toLowerCase().indexOf(query) === -1)
+      $this.closest('div.pTags').fadeOut();
+      else $this.closest('div.pTags').fadeIn();
+    });
+  });
+
+  $('.pSearchForm').hide();
+  $(".searchI").click(function(){
+    $(".pSearchForm").toggle();
+  });
+
+});
+
+</script>
