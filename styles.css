@@ -110,6 +110,18 @@ body {
   margin-top: -65px;
   font-size: 25px;
 }
+.aboutI {
+  float:left;
+  margin-top: -65px;
+  font-size: 25px;
+}
+.contactI {
+  float:left;
+  margin-top: -65px;
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+}
 .pSearchForm {
   float: right;
   right: 32px;
@@ -119,7 +131,7 @@ body {
 .pName {
   margin: 0 auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 3vw;
   color: white;
   max-width: 35%;
   background-color: rgba(0, 0, 0, 0.7);
