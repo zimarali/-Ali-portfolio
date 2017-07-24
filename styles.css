@@ -114,18 +114,27 @@ body {
   float:left;
   margin-top: -65px;
   font-size: 25px;
+  position: absolute;
+  right: 89px;
 }
 .contactI {
-  float:left;
+  float: right;
   margin-top: -65px;
   font-size: 25px;
   position: relative;
-  left: 20px;
+  right: 35px;
+}
+.projectsI {
+  float:left;
+  margin-top: -64px;
+  font-size: 25px;
+  position: absolute;
+  right: 108px;
 }
 .pSearchForm {
   float: right;
-  right: 32px;
-  margin-top: -67px;
+  right: -10px;
+  margin-top: -34px;
   position: relative;
 }
 .pName {
@@ -162,8 +171,37 @@ body {
   font-size: 45px;
   color: white;
 }
-
-
+#namePlate {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 35%;
+  font-size: 3vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#scPlate {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 30%;
+  font-size: 2vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.skillObj {
+  font-size: 1.5vw;
+  text-align: center;
+  min-width: 25%;
+}
+#skills {
+  margin: 0 auto;
+  max-width: 40%;
+}
+#aboutMe{
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.5vw;
+  max-width: 45%;
+}
 .links{
   float: right;
 }
