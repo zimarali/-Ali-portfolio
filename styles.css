@@ -145,7 +145,7 @@ body {
   max-width: 35%;
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 5px;
-  
+
 }
 #name {
   font-size: 50px;
@@ -212,7 +212,6 @@ body {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   border: none;
-  font: normal normal bold 72px/normal "Atomic Age", Helvetica, sans-serif;
   color: rgb(64, 126, 196);
   text-align: center;
   -o-text-overflow: clip;
