@@ -114,4 +114,6 @@ app.directive('anchorSmoothScroll', function($location) {
     };
 });
 
+
+
 new WOW().init();

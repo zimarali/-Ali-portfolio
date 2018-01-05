@@ -13,8 +13,6 @@ body {
 
 /* Animation test */
 
-
-
 /* Animation test */
 
 .bg1 {
@@ -122,21 +120,20 @@ body {
   margin-top: -65px;
   font-size: 25px;
   position: absolute;
-  right: 89px;
+  right: 53px;
 }
 .contactI {
   float: right;
   margin-top: -65px;
   font-size: 25px;
   position: relative;
-  right: 35px;
 }
 .projectsI {
   float:left;
   margin-top: -64px;
   font-size: 25px;
   position: absolute;
-  right: 108px;
+  right: 73px;
 }
 .pSearchForm {
   float: right;
