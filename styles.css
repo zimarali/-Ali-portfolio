@@ -11,12 +11,8 @@ body {
   display: none;
 }
 
-/* Animation test */
-
-/* Animation test */
-
 .bg1 {
-  background-image: url(./images/bg2.png);
+  background-image: url(./images/spaceBgTop.png);
   position: relative;
   opacity: 0.95;
   background-attachment: fixed;
@@ -28,9 +24,11 @@ body {
   margin-bottom: 70px;
   padding-top: 25px;
   min-height: 500px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
 }
 .bg3 {
-  background-image: url(./images/bg2.png);
+  background-image: url(./images/spaceBgBottom.png);
   position: relative;
   opacity: 0.95;
   background-attachment: fixed;
@@ -42,6 +40,8 @@ body {
   margin-top: 70px;
   padding-top: 25px;
   min-height: 300px;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
+clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
 }
 .pbg1, .pbg2, .pbg3, .pbg4 {
   position: relative;
@@ -325,6 +325,16 @@ body {
 .i2 {
   font-size: 30px;
   margin: 5px;
+  font: normal normal bold 72px/normal "Atomic Age", Helvetica, sans-serif;
+  color: rgba(0,0,0);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 rgb(77,162,252) , -1px -1px 0 rgb(77,162,252) , 1px -1px 0 rgb(77,162,252) , -1px 1px 0 rgb(77,162,252) , 4px 4px 8px rgb(44,88,137) , -4px 4px 8px rgb(44,88,137) , 4px -4px 8px rgb(44,88,137) , -4px -4px 8px rgb(44,88,137) ;
+  -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 #upI {
   color: white;
