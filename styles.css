@@ -44,6 +44,7 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   padding-top: 25px;
+  padding-bottom: 25px;
   min-height: 300px;
   -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
