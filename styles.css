@@ -7,6 +7,11 @@ body {
 .navStuff {
   margin-bottom: 30px;
 }
+.sticky {
+  position: fixed;
+  /* top: 0;
+  width: 100%; */
+}
 .tags {
   display: none;
 }
@@ -14,35 +19,44 @@ body {
 .bg1 {
   background-image: url(./images/spaceBgTop.png);
   position: relative;
-  opacity: 0.95;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   padding-top: 25px;
   min-height: 500px;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
 }
 .bg3 {
   background-image: url(./images/spaceBgBottom.png);
   position: relative;
-  opacity: 0.95;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 50px;
   padding-top: 25px;
   min-height: 300px;
   -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
 }
+
+/* mobile top and bottom */
+@media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
+  .bg1 {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  }
+}
+
 .pbg1, .pbg2, .pbg3, .pbg4 {
   position: relative;
   opacity: 0.85;
@@ -62,6 +76,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   background-blend-mode: difference;
   min-height: 350px;
   box-shadow: 10px 10px 5px black;
+  z-index: 0;
 }
 .pbg2 {
   background-image: url(./images/bg2.png);
@@ -69,6 +84,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   background-blend-mode: difference;
   min-height: 350px;
   box-shadow: 10px 10px 5px black;
+  z-index: 0;
 }
 .pbg3 {
   background-image: url(./images/bg2.png);
@@ -76,6 +92,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   background-blend-mode: difference;
   min-height: 350px;
   box-shadow: 10px 10px 5px black;
+  z-index: 0;
 }
 .pbg4 {
   background-image: url(./images/bg2.png);
@@ -83,6 +100,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   background-blend-mode: difference;
   min-height: 350px;
   box-shadow: 10px 10px 5px black;
+  z-index: 0;
 }
 
 .boxstuffbox {
@@ -94,7 +112,6 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   max-width: 65%;
   padding: 10px;
   overflow: auto;
-  z-index: 1;
 }
 .bardude {
   background-color: black;
@@ -110,31 +127,28 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
   z-index: 1;
   top: -90%;
 }
-.searchI {
-  float:right;
-  margin-top: -65px;
-  font-size: 25px;
-}
-.aboutI {
-  float:left;
-  margin-top: -65px;
-  font-size: 25px;
-  position: absolute;
-  right: 53px;
+#navButtons {
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: -70px;
 }
 .contactI {
-  float: right;
-  margin-top: -65px;
+  float: left;
   font-size: 25px;
-  position: relative;
+  width: 100%;
 }
 .projectsI {
-  float:left;
-  margin-top: -64px;
+  float: left;
   font-size: 25px;
-  position: absolute;
-  right: 73px;
+  width: 100%;
 }
+@media only screen and (max-width: 420px), only screen and (max-device-width: 420px){
+#contact {
+  max-width: 75%;
+  margin: auto;
+}
+}
+
 .pSearchForm {
   float: right;
   right: -10px;
@@ -324,7 +338,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 1
 }
 .i2 {
   font-size: 30px;
-  margin: 5px;
+  margin: 50px;
   font: normal normal bold 72px/normal "Atomic Age", Helvetica, sans-serif;
   color: rgba(0,0,0);
   text-align: center;

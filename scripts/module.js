@@ -114,6 +114,18 @@ app.directive('anchorSmoothScroll', function($location) {
     };
 });
 
+window.onscroll = function() {stickButtons()};
 
+var navbar = document.getElementById("navButtons");
+
+var sticky = navbar.offsetTop;
+
+function stickButtons() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 new WOW().init();

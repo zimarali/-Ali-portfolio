@@ -1,92 +1,71 @@
-<a href="#/"><i class="projectsI fa fa-folder-open-o"></i></a>
-<a href="#/about"><i class="aboutI fa fa-info"></i></a>
-<a href="#/contact"><i class="contactI fa fa-envelope-o"></i></a>
-<!-- <i class="searchI glyphicon glyphicon-search"></i> -->
-
-<!-- <div class="pSearchForm">
-  <form class="p-search">
-    <input type="text" class="search-query" placeholder="Search Projects..">
-    <button type="submit" class="btn">Search</button>
-  </form>
-</div> -->
-
-<div class="pTags wow slideInLeft" data-wow-duration="3s"><p class="tags">HTML5 CSS JavaScript AngularJS Bootstrap Last FM API discgo</p>
-  <div class="pbg1">
-    <div class="pName">DiscGo</div>
-    <div class="boxstuffbox">
-      <img align="left" class="pImg img-responsive" src="images/discGo.png">
-      <div class="desc2">
-        using:
-        <br>
-        HTML5/CSS
-        <br>
-        JavaScript
-        <br>
-        AngularJS
-        <br>
-        Bootstrap
-        <br>
-        Last.FM API
-      </div>
-      <div class="links">
-        <a href="https://github.com/zimarali/discGo" target="_blank" class="button">Github</a>
-        <a href="https://zimarali.github.io/discgoPages" target="_blank" class="button">Demo</a>
-      </div>
+<div class="pbg1 wow slideInLeft" data-wow-duration="1.5s">
+  <div class="pName">DiscGo</div>
+  <div class="boxstuffbox">
+    <img align="left" class="pImg img-responsive" src="images/discGo.png">
+    <div class="desc2">
+      using:
+      <br>
+      HTML5/CSS
+      <br>
+      JavaScript
+      <br>
+      AngularJS
+      <br>
+      Bootstrap
+      <br>
+      Last.FM API
+    </div>
+    <div class="links">
+      <a href="https://github.com/zimarali/discGo" target="_blank" class="button">Github</a>
+      <a href="https://zimarali.github.io/discgoPages" target="_blank" class="button">Demo</a>
     </div>
   </div>
 </div>
 
-
-<div class="pTags wow slideInRight" data-wow-duration="3s"><p class="tags">HTML5 CSS JavaScript Bootstrap seatres theater arck</p>
-  <div class="pbg2">
-    <div class="pName">Theater Arck</div>
-    <div class="boxstuffbox">
-      <img align="left" class="pImg img-responsive" src="images/SeatRes.png">
-      <div class="desc2">
-        using:
-        <br>
-        HTML5/CSS
-        <br>
-        JavaScript
-        <br>
-        Bootstrap
-      </div>
-      <div class="links">
-        <a href="https://github.com/zimarali/SeatRes" target="_blank" class="button">Github</a>
-        <a href="https://zimarali.github.io/SeatRes/" target="_blank" class="button">Demo</a>
-      </div>
+<div class="pbg2 wow slideInRight" data-wow-duration="1.5s">
+  <div class="pName">Theater Arck</div>
+  <div class="boxstuffbox">
+    <img align="left" class="pImg img-responsive" src="images/SeatRes.png">
+    <div class="desc2">
+      using:
+      <br>
+      HTML5/CSS
+      <br>
+      JavaScript
+      <br>
+      Bootstrap
+    </div>
+    <div class="links">
+      <a href="https://github.com/zimarali/SeatRes" target="_blank" class="button">Github</a>
+      <a href="https://zimarali.github.io/SeatRes/" target="_blank" class="button">Demo</a>
     </div>
   </div>
 </div>
 
-
-<div class="pTags wow slideInLeft" data-wow-duration="3s"><p class="tags">HTML5 CSS JavaScript JQuery Bootstrap art gallery</p>
-  <div class="pbg3">
-    <div class="pName">Gallery Demo</div>
-    <div class="boxstuffbox">
-      <img align="left" class="pImg img-responsive" src="images/TMSchantz.png">
-      <div class="desc2">
-        using:
-        <br>
-        HTML5/CSS
-        <br>
-        JavaScript
-        <br>
-        JQuery
-        <br>
-        Bootstrap
-      </div>
-      <div class="links">
-        <a href="https://github.com/zimarali/TMSchantz" target="_blank" class="button">Github</a>
-        <a href="https://zimarali.github.io/TMSchantz/" target="_blank" class="button">Demo</a>
-      </div>
+<div class="pbg3 wow slideInLeft" data-wow-duration="1.5s">
+  <div class="pName">Gallery Demo</div>
+  <div class="boxstuffbox">
+    <img align="left" class="pImg img-responsive" src="images/TMSchantz.png">
+    <div class="desc2">
+      using:
+      <br>
+      HTML5/CSS
+      <br>
+      JavaScript
+      <br>
+      JQuery
+      <br>
+      Bootstrap
+    </div>
+    <div class="links">
+      <a href="https://github.com/zimarali/TMSchantz" target="_blank" class="button">Github</a>
+      <a href="https://zimarali.github.io/TMSchantz/" target="_blank" class="button">Demo</a>
     </div>
   </div>
 </div>
 
-
-<div class="pTags wow slideInRight" data-wow-duration="3s"><p class="tags">HTML5 CSS Parallax</p>
-  <div class="pbg4">
+<div class="pTags wow slideInRight" data-wow-duration="1.5s"><p class="tags">HTML5 CSS Parallax</p>
+  <div class="pbg4 wow slideInRight" data-wow-duration="1.5s">
     <div class="pName">Parallax Demo</div>
     <div class="boxstuffbox">
       <img align="left" class="pImg img-responsive" src="images/parallax.png">
@@ -102,27 +81,3 @@
     </div>
   </div>
 </div>
-
-<script>
-
-$(document).ready(function(){
-
-  $('.p-search').on('submit',function(){return false;});
-  $('.p-search .btn').on('click', function(e){
-    var query = $.trim($(this).prevAll('.search-query').val()).toLowerCase();
-    $('div.pTags .tags').each(function(){
-      var $this = $(this);
-      if($this.text().toLowerCase().indexOf(query) === -1)
-      $this.closest('div.pTags').fadeOut();
-      else $this.closest('div.pTags').fadeIn();
-    });
-  });
-
-  $('.pSearchForm').hide();
-  $(".searchI").click(function(){
-    $(".pSearchForm").toggle();
-  });
-
-});
-
-</script>
