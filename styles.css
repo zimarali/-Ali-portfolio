@@ -58,7 +58,7 @@ body {
   }
 }
 
-.pbg1, .pbg2, .pbg3, .pbg4 {
+.pbg1, .pbg2, .pbg3, .pbg4, .pbg0 {
   position: relative;
   opacity: 0.85;
   background-attachment: fixed;
@@ -70,6 +70,14 @@ body {
   padding-top: 25px;
   padding-bottom: 20px;
   margin-bottom: 75px;
+}
+.pbg0 {
+  background-image: url(./images/bg2.png);
+  background-color: #42bff4;
+  background-blend-mode: difference;
+  min-height: 350px;
+  box-shadow: 10px 10px 5px black;
+  z-index: 0;
 }
 .pbg1 {
   background-image: url(./images/bg2.png);
