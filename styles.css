@@ -367,7 +367,7 @@ a .fa{
 }
 
 @media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
-  .pbg1, .pbg2, .pbg3, .pbg4 {
+ .pbg0, .pbg1, .pbg2, .pbg3, .pbg4 {
     background-blend-mode: none;
     background-color: white;
     background-image: none;
